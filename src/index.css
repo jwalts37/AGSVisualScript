@@ -1,0 +1,75 @@
+@import '@xyflow/react/dist/style.css';
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI', roboto, oxygen, ubuntu, cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #0f1115;
+  color: #fff;
+}
+
+.react-flow__bg {
+  background-color: #1a1c23;
+}
+
+/* Base Node Styling for Unreal Engine look */
+.bp-node {
+  background: rgba(30, 30, 35, 0.95);
+  border: 1px solid #111;
+  border-radius: 8px;
+  overflow: hidden;
+  min-width: 220px;
+  color: #eee;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+.bp-header {
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+  border-bottom: 1px solid #111;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Header Variations */
+.bp-header-event {
+  background: linear-gradient(90deg, rgba(139,28,28,1) 0%, rgba(185,28,28,1) 100%);
+}
+
+.bp-header-action {
+  background: linear-gradient(90deg, rgba(30,58,138,1) 0%, rgba(37,99,235,1) 100%);
+}
+
+.bp-header-condition {
+  background: linear-gradient(90deg, rgba(146,64,14,1) 0%, rgba(217,119,6,1) 100%);
+}
+
+.bp-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Inputs and Selects */
+.bp-input {
+  background: rgba(15, 17, 21, 0.8);
+  border: 1px solid #000;
+  border-radius: 4px;
+  color: #fff;
+  padding: 4px 6px;
+  font-size: 12px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/* Electric Glow Animation */
+@keyframes pulseGlow {
+  0% { filter: blur(2px); stroke-opacity: 0.4; }
+  100% { filter: blur(5px); stroke-opacity: 0.8; }
+}
